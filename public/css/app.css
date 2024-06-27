@@ -1,0 +1,81 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 70vw;
+}
+
+/*pagina de usuários*/
+
+.usuarios {
+    margin-top: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.usuario{
+    margin: 0vh .5vw 2vh .5vw;
+    max-width: 50%;
+    min-width: 20%;
+}
+.group-btn-users {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-user{
+    padding: 1vh;
+    font-size: 4vh;
+}
+.btn-user-excluir {
+    color: red;
+}
+.btn-user-editar {
+    color: blue;
+}
+
+/*pagina de home*/
+
+.conteiner-home-geral {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-group-text-img {
+    display: flex;
+    margin: 1vw;
+}
+.img-home {
+    width: 30vw;
+}
+.container-home-text {
+    padding: 2vw;
+    border-left: 1px solid #9b9b9b;
+    font-size: 20px;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+/*pagina de cadastro*/
+
+.container-form {
+    width: 50vw;
+    max-width: 30%;
+}
+form {
+    margin: 0;
+    padding: 1vh;
+}
+.group-btn-register {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

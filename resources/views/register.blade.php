@@ -3,6 +3,7 @@
 @section('title', 'Cadastro')
 
 @section('content')
+  <div class="cadastro-geral">
     <h2>Cadastro de Usuário</h2>
     <div class=" shadow p-3 mb-5 bg-white rounded container-form">
         <form action="/register" method="POST">
@@ -46,4 +47,5 @@
           </div>
         </form>
     </div>
+  </div>
 @endsection

@@ -3,7 +3,7 @@
 @section('title', 'Início')
 
 @section('content')
-    <div class="container-sm shadow p-3 mb-5 bg-white rounded conteiner-home-geral" >
+    <div class="container-sm shadow p-3 mb-5 bg-white rounded container-home-geral" >
         <h2>Bem-vindo ao Sistema de Gerenciamento de Usuários do Instituto Verbena!</h2>
         <div class="container-group-text-img">
             <img src="/img/home-page/User research-rafiki.svg" alt="ilustração de clientes" class="img-home">

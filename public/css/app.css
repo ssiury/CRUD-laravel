@@ -1,16 +1,20 @@
-.main {
+main {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    max-width: 70vw;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+.alerta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
 }
 
 /*pagina de usuários*/
 
 .usuarios {
-    margin-top: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,19 +34,28 @@
 .btn-user{
     padding: 1vh;
     font-size: 4vh;
+    background: #fff;
+    border: none;
 }
 .btn-user-excluir {
     color: red;
 }
+.btn-user-excluir:hover {
+    color: rgb(150, 0, 0);
+}
 .btn-user-editar {
     color: blue;
+}
+.btn-user-editar:hover {
+    color: rgb(0, 0, 150);
+}
+.page-usuarios {
+    display: flex;
 }
 
 /*pagina de home*/
 
-.conteiner-home-geral {
-    margin: 0;
-    padding: 0;
+.container-home-geral {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,9 +78,15 @@
 
 /*pagina de cadastro*/
 
+.cadastro-geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .container-form {
     width: 50vw;
-    max-width: 30%;
+    max-width: 35%;
 }
 form {
     margin: 0;

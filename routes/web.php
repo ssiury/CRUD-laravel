@@ -17,3 +17,4 @@ Route::get('/', [UserController::class, 'index']);
 Route::get('/register', [UserController::class, 'register']);
 Route::get('/users/{status}', [UserController::class, 'users']);
 Route::post('/register', [UserController::class, 'store']);
+Route::delete('/users/{id}', [UserController::class, 'destroy']);

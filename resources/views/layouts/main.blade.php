@@ -58,16 +58,13 @@
             </nav>
         </header>
         <main>
-            <div class="container-fluid main">
-                <div class="row main">
                     @if (session('msg'))
-                        <div class="alert alert-success" role="alert">
+                        <div class="alert alert-success alerta" role="alert">
                             {{session('msg')}}
-                          </div>
+                        </div>
                     @endif
                     @yield('content') 
-                </div>
-            </div>
+                
         </main>
         <header>
             

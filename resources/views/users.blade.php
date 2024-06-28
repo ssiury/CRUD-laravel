@@ -21,13 +21,9 @@
                                     <li class="list-group-item">Ativo</li>
                                 </ul>
                                 <div class="card-body group-btn-users">
-                                    <form action="" method="post">
-                                        @csrf
-                                        @method('UPDATE')
-                                        <button type="submit" class="card-link btn-user btn-user-editar">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </button>
-                                    </form>
+                                    <a href="/users/edit/{{$user->id}}" class="card-link btn-user btn-user-editar">
+                                        <ion-icon name="create-outline"></ion-icon>
+                                    </a>
                                     <form action="/users/{{$user->id}}" method="post">
                                         @csrf
                                         @method('DELETE')
@@ -62,8 +58,8 @@
                                     <li class="list-group-item">Desativo</li>
                                 </ul>
                                 <div class="card-body group-btn-users">
-                                    <a href="#" class="card-link btn-user btn-user-editar">
-                                        <ion-icon name="pencil-outline"></ion-icon>
+                                    <a href="/users/edit/{{$user->id}}" class="card-link btn-user btn-user-editar">
+                                        <ion-icon name="create-outline"></ion-icon>
                                     </a>
                                     <form action="/users/{{$user->id}}" method="post">
                                         @csrf
@@ -102,8 +98,8 @@
                                 </li>
                             </ul>
                             <div class="card-body group-btn-users">
-                                <a href="#" class="card-link btn-user btn-user-editar">
-                                    <ion-icon name="pencil-outline"></ion-icon>
+                                <a href="/users/edit/{{$user->id}}" class="card-link btn-user btn-user-editar">
+                                    <ion-icon name="create-outline"></ion-icon>
                                 </a>
                                 <form action="/users/{{$user->id}}" method="post">
                                     @csrf

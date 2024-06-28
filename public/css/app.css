@@ -44,6 +44,7 @@ main {
     color: rgb(150, 0, 0);
 }
 .btn-user-editar {
+    margin-top: 1vh;
     color: blue;
 }
 .btn-user-editar:hover {

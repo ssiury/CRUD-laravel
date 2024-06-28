@@ -28,9 +28,17 @@ class UserController extends Controller
         $user->save();
         return redirect('/register')->with('msg', 'Usuário cadastrado com sucesso');
     }
-    public function destroy($id){
+    public function destroy($id) {
         User::findOrFail($id)->delete();
 
         return redirect('/users/todos')->with('msg', 'Usuário deletado com sucesso!');
+    }
+    public function edit($id) {
+        $user = User::findOrFail($id);
+        return view('edit', ['user' => $user]);
+    }
+    public function update(Request $request) {
+        User::findOrFail($request->id)->update($request->all());
+        return redirect('/users/todos')->with('msg', "Usuário editado com sucesso!");
     }
 }
